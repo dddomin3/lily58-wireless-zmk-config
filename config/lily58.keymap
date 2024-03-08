@@ -37,7 +37,7 @@
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |   7   |  8    |  9   |   -   |       |
             // |       |     |  ^  |      |      |      |                   |      |   4   |  5    |  6   |   +   |       |
             // |       |  <- |  v  |  ->  |      |      |                   |      |   1   |  2    |  3   | ENTER |       |
-            // |       | HOME|     | END  |      |      |        |  |       |      |   -   |  0    |  .   | ENTER |       |
+            // |       | HOME|     | END  |      |      |        |  |       |      |   =   |  0    |  .   | ENTER |       |
             //                     |      |      |      |        |  |       |      |  DEL  |       |
 
             display-name = "Lower";
@@ -45,7 +45,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                 &trans  &kp N7     &kp N8  &kp N9   &kp MINUS  &trans
 &kp LC(X)   &kp LC(C)     &kp UP        &kp LC(V)     &trans        &trans                                                       &trans  &kp N4     &kp N5  &kp N6   &kp PLUS   &trans
 &trans      &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans                                                       &trans  &kp N1     &kp N2  &kp N3   &kp RET    &trans
-&trans      &kp HOME      &trans        &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp MINUS  &kp N0  &kp DOT  &kp RET    &trans
+&trans      &kp HOME      &trans        &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp EQUAL  &kp N0  &kp DOT  &kp RET    &trans
                                         &trans        &trans        &trans        &trans                  &trans                 &trans  &kp DEL    &trans
             >;
 
