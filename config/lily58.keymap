@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        ForwardDelete {
+            bindings = <&kp DEL>;
+            key-positions = <56 36>;
+            layers = <0 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,7 +88,7 @@
         };
 
         mraise_layer {
-            display-name = "Mac Raise"
+            display-name = "Mac Raise";
             bindings = <
 &trans     &kp F1        &kp F2        &kp F3         &kp F4  &kp F5                    &kp F6     &kp F7            &kp F8            &kp F9             &kp F10  &kp F11
 &kp LG(X)  &kp LG(C)     &kp LA(UP)    &kp LG(V)      &trans  &trans                    &kp LG(X)  &kp LG(C)         &kp LS(LA(UP))    &kp LG(V)          &trans   &kp F12
