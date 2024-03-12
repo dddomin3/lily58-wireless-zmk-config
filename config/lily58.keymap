@@ -26,14 +26,14 @@
         MacTooth: MacTooth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 3 &bt BT_SEL 0>;
+            bindings = <&to 3 &bt BT_SEL 0>;
             label = "MACTOOTH";
         };
 
         WinTooth: WinTooth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 0 &bt BT_SEL 1>;
+            bindings = <&to 0 &bt BT_SEL 1>;
             label = "WINTOOTH";
         };
     };
