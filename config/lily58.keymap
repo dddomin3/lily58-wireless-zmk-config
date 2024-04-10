@@ -24,35 +24,35 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        shiftcap: shiftcap {
+        ShiftCap: ShiftCap {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFTCAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kt LEFT_SHIFT>;
         };
 
-        holdortog1: holdortog1 {
+        HoldOrTog1: HoldOrTog1 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG1";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
         };
 
-        holdortog2: holdortog2 {
+        HoldOrTog2: HoldOrTog2 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG2";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
         };
 
-        holdortog4: holdortog4 {
+        HoldOrTog4: HoldOrTog4 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG4";
             #binding-cells = <0>;
             bindings = <&mo 4>, <&tog 4>;
         };
 
-        holdortog5: holdortog5 {
+        HoldOrTog5: HoldOrTog5 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG5";
             #binding-cells = <0>;
@@ -85,8 +85,8 @@
 &kp ESCAPE  &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                              &kp N6       &kp N7      &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB     &kp Q   &kp W   &kp E     &kp R         &kp T                               &kp Y        &kp U       &kp I      &kp O    &kp P     &kp MINUS
 &kp LCTRL   &kp A   &kp S   &kp D     &kp F         &kp G                               &kp H        &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&shiftcap   &kp Z   &kp X   &kp C     &kp V         &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
-                            &kp LALT  &kp LEFT_GUI  &holdortog1  &kp SPACE    &kp RET   &holdortog2  &FwrdBkspc  &kp RCTRL
+&ShiftCap   &kp Z   &kp X   &kp C     &kp V         &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &ShiftCap
+                            &kp LALT  &kp LEFT_GUI  &HoldOrTog1  &kp SPACE    &kp RET   &HoldOrTog2  &FwrdBkspc  &kp RCTRL
             >;
         };
 
@@ -118,8 +118,8 @@
 &kp ESCAPE    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                              &kp N6       &kp N7      &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB       &kp Q   &kp W   &kp E     &kp R      &kp T                               &kp Y        &kp U       &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_GUI  &kp A   &kp S   &kp D     &kp F      &kp G                               &kp H        &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&shiftcap     &kp Z   &kp X   &kp C     &kp V      &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
-                              &kp LALT  &kp LCTRL  &holdortog4  &kp SPACE    &kp RET   &holdortog5  &FwrdBkspc  &kp RCTRL
+&ShiftCap     &kp Z   &kp X   &kp C     &kp V      &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &ShiftCap
+                              &kp LALT  &kp LCTRL  &HoldOrTog4  &kp SPACE    &kp RET   &HoldOrTog5  &FwrdBkspc  &kp RCTRL
             >;
         };
 
