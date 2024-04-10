@@ -88,8 +88,6 @@
 &shiftcap   &kp Z   &kp X   &kp C     &kp V         &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
                             &kp LALT  &kp LEFT_GUI  &holdortog1  &kp SPACE    &kp RET   &holdortog2  &FwrdBkspc  &kp RCTRL
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         mlower_layer {
@@ -101,8 +99,6 @@
 &trans      &kp HOME   &trans     &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp EQUAL  &kp N0  &kp DOT  &kp BACKSLASH  &trans
                                   &trans        &trans        &to 0         &trans                  &trans                 &trans  &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         mraise_layer {
@@ -114,8 +110,6 @@
 &trans     &kp HOME      &trans        &kp END        &trans  &trans  &trans    &trans  &trans     &kp LS(HOME)      &trans            &kp LS(END)        &trans   &trans
                                        &trans         &trans  &trans  &trans    &trans  &to 0      &trans            &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         default_layer {
@@ -127,8 +121,6 @@
 &shiftcap     &kp Z   &kp X   &kp C     &kp V      &kp B        &kp LBKT     &kp RBKT  &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
                               &kp LALT  &kp LCTRL  &holdortog4  &kp SPACE    &kp RET   &holdortog5  &FwrdBkspc  &kp RCTRL
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -140,8 +132,6 @@
 &trans      &kp HOME   &trans     &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp EQUAL  &kp N0  &kp DOT  &kp BACKSLASH  &trans
                                   &trans        &trans        &to 3         &trans                  &trans                 &trans  &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -153,8 +143,6 @@
 &trans     &kp HOME      &trans        &kp END        &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &kp LS(HOME)      &trans            &kp LS(END)        &trans   &trans
                                        &trans         &trans  &trans  &trans                  &trans                 &to 3      &trans            &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
