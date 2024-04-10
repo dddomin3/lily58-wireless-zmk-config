@@ -21,14 +21,14 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         ShiftCap: ShiftCap {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFTCAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kt LEFT_SHIFT>;
+            bindings = <&kp LEFT_SHIFT>, <&kt RIGHT_SHIFT>;
         };
 
         HoldOrTog1: HoldOrTog1 {
@@ -97,7 +97,7 @@
 &kp LG(X)   &kp LG(C)  &kp UP     &kp LG(V)     &trans        &trans                                                       &trans  &kp N4     &kp N5  &kp N6   &kp KP_PLUS    &kp EQUAL
 &trans      &kp LEFT   &kp DOWN   &kp RIGHT     &trans        &trans                                                       &trans  &kp N1     &kp N2  &kp N3   &kp BACKSLASH  &trans
 &trans      &kp HOME   &trans     &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp EQUAL  &kp N0  &kp DOT  &kp BACKSLASH  &trans
-                                  &trans        &trans        &to 0         &trans                  &trans                 &trans  &trans     &trans
+                                  &trans        &trans        &to 0         &trans                  &trans                 &to 0   &trans     &trans
             >;
         };
 
@@ -108,7 +108,7 @@
 &kp LG(X)  &kp LG(C)     &kp LA(UP)    &kp LG(V)      &trans  &trans                    &kp LG(X)  &kp LG(C)         &kp LS(LA(UP))    &kp LG(V)          &trans   &kp F12
 &trans     &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans  &trans                    &trans     &kp LS(LA(LEFT))  &kp LS(LA(DOWN))  &kp LS(LA(RIGHT))  &trans   &trans
 &trans     &kp HOME      &trans        &kp END        &trans  &trans  &trans    &trans  &trans     &kp LS(HOME)      &trans            &kp LS(END)        &trans   &trans
-                                       &trans         &trans  &trans  &trans    &trans  &to 0      &trans            &trans
+                                       &trans         &trans  &to 0   &trans    &trans  &to 0      &trans            &trans
             >;
         };
 
@@ -130,7 +130,7 @@
 &kp LC(X)   &kp LC(C)  &kp UP     &kp LC(V)     &trans        &trans                                                       &trans  &kp N4     &kp N5  &kp N6   &kp KP_PLUS    &kp EQUAL
 &trans      &kp LEFT   &kp DOWN   &kp RIGHT     &trans        &trans                                                       &trans  &kp N1     &kp N2  &kp N3   &kp BACKSLASH  &trans
 &trans      &kp HOME   &trans     &kp END       &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp EQUAL  &kp N0  &kp DOT  &kp BACKSLASH  &trans
-                                  &trans        &trans        &to 3         &trans                  &trans                 &trans  &trans     &trans
+                                  &trans        &trans        &to 3         &trans                  &trans                 &to 3   &trans     &trans
             >;
         };
 
@@ -141,7 +141,7 @@
 &kp LC(X)  &kp LC(C)     &kp LC(UP)    &kp LC(V)      &trans  &trans                                                 &kp LC(X)  &kp LC(C)         &kp LC(LS(UP))    &kp LC(V)          &trans   &kp F12
 &trans     &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &trans  &trans                                                 &trans     &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LS(LC(RIGHT))  &trans   &trans
 &trans     &kp HOME      &trans        &kp END        &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &kp LS(HOME)      &trans            &kp LS(END)        &trans   &trans
-                                       &trans         &trans  &trans  &trans                  &trans                 &to 3      &trans            &trans
+                                       &trans         &trans  &to 3   &trans                  &trans                 &to 3      &trans            &trans
             >;
         };
     };
