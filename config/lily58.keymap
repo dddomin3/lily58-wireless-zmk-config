@@ -31,18 +31,32 @@
             bindings = <&kp LEFT_SHIFT>, <&kt LEFT_SHIFT>;
         };
 
-        holdortoggle4: holdortoggle4 {
+        holdortog1: holdortog1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "HOLDORTOGGLE4";
+            label = "HOLDORTOG1";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+
+        holdortog2: holdortog2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOLDORTOG2";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&tog 2>;
+        };
+
+        holdortog4: holdortog4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOLDORTOG4";
             #binding-cells = <0>;
             bindings = <&mo 4>, <&tog 4>;
         };
 
-        holdortoggle1: holdortoggle1 {
+        holdortog5: holdortog5 {
             compatible = "zmk,behavior-tap-dance";
-            label = "HOLDORTOGGLE1";
+            label = "HOLDORTOG5";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
+            bindings = <&mo 5>, <&tog 5>;
         };
     };
 
@@ -72,7 +86,7 @@
 &kp TAB     &kp Q   &kp W   &kp E     &kp R         &kp T                                  &kp Y   &kp U       &kp I      &kp O    &kp P     &kp MINUS
 &kp LCTRL   &kp A   &kp S   &kp D     &kp F         &kp G                                  &kp H   &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
 &shiftcap   &kp Z   &kp X   &kp C     &kp V         &kp B           &kp LBKT     &kp RBKT  &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
-                            &kp LALT  &kp LEFT_GUI  &holdortoggle1  &kp SPACE    &kp RET   &mo 2   &FwrdBkspc  &kp RCTRL
+                            &kp LALT  &kp LEFT_GUI  &holdortog1  &kp SPACE    &kp RET   &mo 2   &FwrdBkspc  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -111,7 +125,7 @@
 &kp TAB       &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp Y   &kp U       &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_GUI  &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp H   &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
 &shiftcap     &kp Z   &kp X   &kp C     &kp V      &kp B           &kp LBKT     &kp RBKT  &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &shiftcap
-                              &kp LALT  &kp LCTRL  &holdortoggle4  &kp SPACE    &kp RET   &mo 5   &FwrdBkspc  &kp RCTRL
+                              &kp LALT  &kp LCTRL  &holdortog4  &kp SPACE    &kp RET   &mo 5   &FwrdBkspc  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
