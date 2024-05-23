@@ -21,7 +21,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         ShiftCap: ShiftCap {
@@ -35,28 +35,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG1";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
+            bindings = <&mo 1>, <&sl 1>, <&tog 1>;
         };
 
         HoldOrTog2: HoldOrTog2 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG2";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
+            bindings = <&mo 2>, <&sl 2>, <&tog 2>;
         };
 
         HoldOrTog4: HoldOrTog4 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG4";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&tog 4>;
+            bindings = <&mo 4>, <&sl 4>, <&tog 4>;
         };
 
         HoldOrTog5: HoldOrTog5 {
             compatible = "zmk,behavior-tap-dance";
             label = "HOLDORTOG5";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&tog 5>;
+            bindings = <&mo 5>, <&sl 5>, <&tog 5>;
         };
     };
 
